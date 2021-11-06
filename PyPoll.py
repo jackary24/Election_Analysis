@@ -1,6 +1,3 @@
-# Data needed
-
-#import modules
 import csv
 import os
 
@@ -31,23 +28,33 @@ with open(file_to_load) as election_data:
         
         candidate_votes[candidate_name] += 1
 
-    for candidate_name in candidate_votes:
-        votes = candidate_votes[candidate_name]
-        vote_percentage = float(votes)/float(total_vote) * 100
+    with open(file_to_save, "w") as txt_file:
+        election_results=(
+            f"\nElection Results\n"
+            f"---------------------------\n"
+            f"Total Votes: {total_vote:,}\n"
+            f"---------------------------\n")
+        print(election_results, end='')
+        txt_file.write(election_results)
 
-        if (votes > winning_count) and (vote_percentage>winning_percentage):
-            winning_count = votes
-            winning_percentage = vote_percentage
-            winning_candidate = candidate_name
+        for candidate_name in candidate_votes:
+            votes = candidate_votes[candidate_name]
+            vote_percentage = float(votes)/float(total_vote) * 100
+            candidate_results = (
+                f"{candidate_name}: {vote_percentage:.1f}% ({votes}).\n")
+            print(candidate_results)
+            txt_file.write(candidate_results)
 
-        print(f"{candidate_name}: {vote_percentage:.1f}% ({votes}).")
-    print(f"-------------------------\nWinner: {winning_candidate}\nWinning Vote Count:{winning_count}\nWinning Vote Percent:{winning_percentage:.1f}%")
+            if (votes > winning_count) and (vote_percentage>winning_percentage):
+                winning_count = votes
+                winning_percentage = vote_percentage
+                winning_candidate = candidate_name
+        winning_candidate_summary=(
+            f"---------------------------\n"
+            f"Winner: {winning_candidate}\n"
+            f"Winning Vote Count: {winning_count:,}\n"
+            f"Winning Percentage: {winning_percentage:.1f}%\n"
+            f"---------------------------\n")
+        print(winning_candidate_summary)
+        txt_file.write(winning_candidate_summary)
 
-
-#1- Total of votes cast
-#2- Complete list of candidates who recieved votes
-#3- % of votes per candidate
-#4- total # of votes per candidate
-#5- The winner of popular vote
-
-#close the file
