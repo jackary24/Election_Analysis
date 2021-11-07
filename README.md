@@ -20,12 +20,13 @@ The analysis of the election:
     - Charles Casper Stockton
     - Diana DeGette
     - Raymon Anthony Doane
--The individual candidate results were:
+    
+- The individual candidate results were:
     - Charles Casper Stockton recieved 23.0% of the total vote, 85,213 votes in total.
     - Diana DeGette recieved 73.8% of the total vote, 272,892 votes in total.
     - Raymon Anthony Doane recieved 3.1% of the total vote, 11,606 votes in total.
--The winner of the election was:
-    -Candidate Diana DeGette, who recieved 73.8% of the total vote, 272,892 votes in total.
+- The winner of the election was:
+    - Candidate Diana DeGette, who recieved 73.8% of the total vote, 272,892 votes in total.
     
 ## Challenge Overview
 
