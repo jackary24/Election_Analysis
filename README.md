@@ -20,14 +20,18 @@ The analysis of the election:
     - Charles Casper Stockton
     - Diana DeGette
     - Raymon Anthony Doane
+
+- The Counties voting were:
+    - Araphoe, with 24,801 voters (6.7% of the total vote).
+    - Denver, with 306,055 voters (82.8% of the total vote).
+    - Jefferson, with 38,855 voters (10.5% of the total vote).
     
 - The individual candidate results were:
     - Charles Casper Stockton recieved 23.0% of the total vote, 85,213 votes in total.
     - Diana DeGette recieved 73.8% of the total vote, 272,892 votes in total.
     - Raymon Anthony Doane recieved 3.1% of the total vote, 11,606 votes in total.
+    
 - The winner of the election was:
     - Candidate Diana DeGette, who recieved 73.8% of the total vote, 272,892 votes in total.
-    
-## Challenge Overview
 
 ## Challenge Summary
