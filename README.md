@@ -1,4 +1,4 @@
-# Election_Analysis
+# Election Analysis
 
 ## Project Overview
 An employee from the Colorado Board of Elections has given the following tasks to complete the election audit of a recent local congressional elections. 
@@ -35,3 +35,7 @@ The analysis of the election:
     - Candidate Diana DeGette, who recieved 73.8% of the total vote, 272,892 votes in total.
 
 ## Challenge Summary
+
+   This code can be expanded from its current version, and used in any number of election, from schoolboard to presidential. The use of for loops to determine the county name, candidate name, and total votes means that we could cover large data sets, without knowing all participants in the race, or even counties participating. Additionally the speed at which python is able to analyze such a large data set with accuracy (and without bias) make it an ideal tool to adopt in an election of any kind. 
+   
+   One potential change they are able to make would having a conditional if statement included in case, like in this race, one candidate pulls away and is a clear winner. This could potentially reduce the amount of time the code needs to run, making it more efficient. Another addition to the code would be to include the percentage each candidate recieved per county. This could help determine the issues each individual county cares about, by seeing which candidate they support, helping determine those issues that affect residents of those counties.  
